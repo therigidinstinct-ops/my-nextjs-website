@@ -1,13 +1,11 @@
-import Hero from "../components/Hero";
-import Pricing from "../components/Pricing";
-import Features from "../components/Features";
+import type { Metadata } from "next";
+import { RigidSignIn } from "@/components/rigid-signin/RigidSignIn";
 
-export default function Home() {
-  return (
-    <main>
-      <Hero />
-      <Pricing />
-      <Features />
-    </main>
-  );
+export const metadata: Metadata = {
+  title: "Sign in – Rigid",
+  description: "Sign in with your Rigid Account.",
+};
+
+export default function SignInPage() {
+  return <RigidSignIn />;
 }
